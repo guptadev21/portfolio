@@ -1,0 +1,36 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+:root {
+  --night: #0d160bff;
+  --pomp-and-power: #785589ff;
+  --mountbatten-pink: #977390ff;
+  --old-rose: #ac7b7dff;
+  --rosy-brown: #bb8a89ff;
+}
+
+/* App.css */
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: var(--night);
+  color: var(--rosy-brown);
+  font-family: 'Kode Mono', monospace; /* Use the imported font */
+}
+
+.App {
+  padding: 20px;
+}
+
+h2 {
+  color: var(--pomp-and-power);
+  font-family: 'Kode Mono', monospace; /* Use the imported font */
+}
+
+p {
+  color: var(--mountbatten-pink);
+  font-family: 'Kode Mono', monospace; /* Use the imported font */
+}

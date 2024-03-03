@@ -1,0 +1,19 @@
+/* AboutMe.css */
+.about-me-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-me-heading {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 16px;
+  }
+  
+  .about-me-content {
+    font-size: 16px;
+    color: #666666;
+  }
+  
