@@ -1,11 +1,11 @@
 // components/Projects.js
 import React from 'react';
-import './Projects.css';
+import './style.css';
 
 function Projects() {
   return (
-    <div>
-      <h2>Projects</h2>
+    <div className='container'>
+      <h2 className='heading'>Projects</h2>
       {/* Your project details go here */}
     </div>
   );

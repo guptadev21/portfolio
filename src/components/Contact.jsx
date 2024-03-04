@@ -1,11 +1,11 @@
 // components/Contact.js
 import React from 'react';
-import './Contact.css';
+import './style.css';
 
 function Contact() {
   return (
-    <div className='contact-container'>
-      <h2 className='contact-heading'>Contact</h2>
+    <div className='container'>
+      <h2 className='heading'>Contact</h2>
       {/* Your contact information and form go here */}
     </div>
   );

@@ -1,0 +1,38 @@
+.container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .heading {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 16px;
+  }
+  
+  .content {
+    font-size: 16px;
+    color: #666666;
+  }
+
+  /* style.css */
+
+.social-icons {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+.social-icons a {
+  color: #333; /* Change color as needed */
+  text-decoration: none;
+  margin-right: 10px; /* Adjust spacing between icons */
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Change color on hover as needed */
+}
+
+  
