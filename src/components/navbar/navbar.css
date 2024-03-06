@@ -1,74 +1,32 @@
 @import "../../App.css";
 
-.nav-container {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 3vh;
-  z-index: 999;
+    display: inline-block; /* Set the display property to inline-block */
+    background-color: var(--night); /* Theme background color */
+    position: fixed; /* Fixed position so it stays on the left */
+    left: 0; /* Align it to the left side of the screen */
+    top: 0; /* Align it to the top of the screen */
 }
 
-.nav-background {
-  width: 380px;
-  height: 40px;
-  padding-left: 0%;
-  padding-right: 0%;
-  background: #fff;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 40px;
+.navbar ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0; /* Remove default margin */
 }
 
-.nav-list {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  align-items: center;
-  margin-left: -16px;
-  margin-right: 20px;
-  margin-top: 11px;
+.navbar li {
+    padding: 10px 20px; /* Adjust padding as needed */
+    color: var(--pomp-and-power); /* Theme text color */
+    cursor: pointer; /* Show pointer cursor on hover */
+    border-bottom: 1px solid var(--pomp-and-power); /* Theme border color */
 }
 
-.nav-item {
-  font-weight: bold;
-  font-size: 80%;
+.navbar li:hover {
+    background-color: var(--pomp-and-power); /* Theme hover background color */
+    color: var(--night); /* Theme hover text color */
 }
 
-.nav-item.active a {
-  color: var(--link-color) !important;
-}
-
-.nav-item a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-.nav-item a:hover {
-  color: var(--link-color);
-  transition: color 0.3s ease-in-out;
-}
-
-@media (max-width: 600px) {
-  .navbar {
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 80%;
-    font-size: 80%;
-  }
-
-  .nav-background {
-    width: 80%;
-    height: 40px;
-  }
-
-  .nav-item {
-    font-weight: bold;
-  }
+.vertical-writing {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }

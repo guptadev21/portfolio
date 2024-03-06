@@ -22,7 +22,7 @@ function App() {
     //   </div>
     // </Router>
     <div className="App">
-      {/* <NavBar /> */}
+      <NavBar />
       <AboutMe />
       <Experience />
       <Projects />

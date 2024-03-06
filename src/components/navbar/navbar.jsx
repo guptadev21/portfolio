@@ -1,39 +1,19 @@
-// NavBar.js
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import './navbar.css'; // Import your CSS file for styling
 
-import "./navbar.css";
-
-const NavBar = (props) => {
-  const { active } = props;
-
+const Navbar = () => {
   return (
-    <div className="nav-container">
-      <nav className="navbar">
-        <div className="nav-background">
-          <ul className="nav-list">
-            <li
-              className={
-                active === "experience" ? "nav-item active" : "nav-item"
-              }
-            >
-              <Link to="/experience">Experience</Link>
-            </li>
-            <li
-              className={active === "projects" ? "nav-item active" : "nav-item"}
-            >
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li
-              className={active === "contact" ? "nav-item active" : "nav-item"}
-            >
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div className="navbar">
+      <ul>
+        <li className='vertical-writing'>About Me</li>
+        <li className='vertical-writing'>B</li>
+        <li className='vertical-writing'>C</li>
+        <li className='vertical-writing'>D</li>
+        <li className='vertical-writing'>E</li>
+        {/* Add more alphabets as needed */}
+      </ul>
     </div>
   );
 };
 
-export default NavBar;
+export default Navbar;
