@@ -1,32 +1,42 @@
 @import "../../App.css";
 
 .navbar {
-    display: inline-block; /* Set the display property to inline-block */
-    background-color: var(--night); /* Theme background color */
-    position: fixed; /* Fixed position so it stays on the left */
-    left: 0; /* Align it to the left side of the screen */
-    top: 0; /* Align it to the top of the screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: var(--night);
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 .navbar ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding: 0;
-    margin: 0; /* Remove default margin */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .navbar li {
-    padding: 10px 20px; /* Adjust padding as needed */
-    color: var(--pomp-and-power); /* Theme text color */
-    cursor: pointer; /* Show pointer cursor on hover */
-    border-bottom: 1px solid var(--pomp-and-power); /* Theme border color */
+  padding: 1px 20px;
+  color: var(--pomp-and-power);
+  cursor: pointer;
+  border-bottom: 1px solid var(--pomp-and-power);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
 }
 
 .navbar li:hover {
-    background-color: var(--pomp-and-power); /* Theme hover background color */
-    color: var(--night); /* Theme hover text color */
+  background-color: var(--pomp-and-power);
+  color: var(--night);
 }
 
-.vertical-writing {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+.activeLink li {
+  color: white;
+  background-color: var(--pomp-and-power);
+  border-bottom: 2px solid var(--highlight-color);
 }
