@@ -2,12 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 
 :root {
-  --night: #0d160bff;
+  --night: rgb(18, 31, 16);
   --pomp-and-power: #785589ff;
   --mountbatten-pink: #977390ff;
   --old-rose: #ac7b7dff;
   --rosy-brown: #bb8a89ff;
+  --jet: #2d2d2aff;
+  --davys-gray: #4c4c47ff;
+  --cool-gray: #848fa5ff;
+  --bittersweet-shimmer: #c14953ff;
+  --pearl: #e5dcc5ff;
+  --platinum: #e6e8e6ff;
+  --timberwolf: #ced0ceff;
+  --ash-gray: #9fb8adff;
+  --feldgrau: #475841ff;
+  --onyx: #3f403fff;
 }
+
+/* :root {
+  
+} */
 
 /* App.css */
 html {
