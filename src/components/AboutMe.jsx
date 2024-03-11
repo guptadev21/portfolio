@@ -9,7 +9,7 @@ function AboutMe() {
     <div className="container">
       <h2 className="heading">Dev Gupta</h2>
       <h3 className="subheading">Cybersecurity Specialist | DevOps Enthusiast | Full-Stack Developer</h3>
-      <div className="content">
+      <div className="contact-card">
         <p>Hello! I'm Dev Gupta, a passionate professional with a diverse skill set. Here's a glimpse into my journey:</p>
 
         <h4>Background:</h4>
