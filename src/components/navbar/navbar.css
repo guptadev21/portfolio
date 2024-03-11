@@ -9,8 +9,6 @@
   position: fixed;
   left: 0;
   top: 0;
-  /* border-radius: 10px; */
-  /* border-right: 1px solid white; */
 }
 
 .navbar ul {
@@ -27,18 +25,40 @@
   padding: 1px 20px;
   color: var(--pearl);
   cursor: pointer;
-  /* border-bottom: 1px solid var(--pomp-and-power); */
   writing-mode: vertical-rl;
   text-orientation: upright;
+  position: relative;
 }
 
 .navbar li:hover {
-  /* background-color: var(--pomp-and-power); */
-  color: var(--timberwolf);
+  color: var(--night);
+}
+
+.navbar li:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, var(--platinum), var(--pearl), var(--platinum)); /* Adjusted neon effect colors */
+  z-index: 1;
+  animation: neon 1.5s infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    filter: blur(5px) brightness(150%) contrast(150%);
+  }
+  to {
+    filter: blur(0px) brightness(100%) contrast(100%);
+  }
 }
 
 .activeLink li {
   color: white;
-  /* background-color: var(--pomp-and-power); */
-  border-bottom: 2px solid var(--highlight-color);
+}
+
+.navbar li::after {
+  display: none; /* Hide the line completely */
 }

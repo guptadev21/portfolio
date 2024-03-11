@@ -21,7 +21,7 @@
 
 body {
   margin: 0;
-  padding: 20rem; /* Add some padding to see the content */
+  padding-left: 20rem; /* Add some padding to see the content */
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   color: #333;
