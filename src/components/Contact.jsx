@@ -10,7 +10,7 @@ function Contact() {
         <p>Email: guptadev.2102@gmail.com</p>
         <p>Phone: +919870938209</p>
         <p>Github: <a href="https://github.com/guptadev21">guptadev21</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourusername">yourusername</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/guptadev21">guptadev21</a></p>
       </div>
     </div>
   );
