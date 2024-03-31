@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Navbar from "./components/navbar/navbar";
 import "./App.css";
-import NavBar from "./components/navbar/navbar";
 
 function App() {
   const [activeSection, setActiveSection] = useState("");
@@ -35,26 +35,29 @@ function App() {
     };
   }, []);
 
-  const HomePage = () => (
-    <>
-      <AboutMe />
-      <Experience />
-      <Projects />
-      <Contact />
-    </>
-  );
+  const smoothScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <Router>
       <div className="App">
-        <NavBar activeSection={activeSection} />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about-me" element={<AboutMe />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <Navbar activeSection={activeSection} smoothScrollToSection={smoothScrollToSection} />
+        <section id="about-me">
+          <AboutMe />
+        </section>
+        <section id="experience">
+          <Experience />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
       </div>
     </Router>
   );

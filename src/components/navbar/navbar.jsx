@@ -1,38 +1,50 @@
-import React from "react";
-import "./navbar.css";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './navbar.css';
 
-const NavBar = ({ activeSection }) => {
+const Navbar = ({ activeSection, smoothScrollToSection }) => {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <ul>
-        <NavLink
-          to="/about-me"
-          className={activeSection === "about-me" ? "activeLink" : ""}
-        >
-          <li>About Me</li>
-        </NavLink>
-        <NavLink
-          to="/experience"
-          className={activeSection === "experience" ? "activeLink" : ""}
-        >
-          <li>Experience</li>
-        </NavLink>
-        <NavLink
-          to="/projects"
-          className={activeSection === "projects" ? "activeLink" : ""}
-        >
-          <li>Projects</li>
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={activeSection === "contact" ? "activeLink" : ""}
-        >
-          <li>Contact</li>
-        </NavLink>
+        <li>
+          <Link
+            to="/"
+            onClick={() => smoothScrollToSection('about-me')}
+            className={activeSection === 'about-me' ? 'active' : ''}
+          >
+            About Me
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/"
+            onClick={() => smoothScrollToSection('experience')}
+            className={activeSection === 'experience' ? 'active' : ''}
+          >
+            Experience
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/"
+            onClick={() => smoothScrollToSection('projects')}
+            className={activeSection === 'projects' ? 'active' : ''}
+          >
+            Projects
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/"
+            onClick={() => smoothScrollToSection('contact')}
+            className={activeSection === 'contact' ? 'active' : ''}
+          >
+            Contact
+          </Link>
+        </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
-export default NavBar;
+export default Navbar;
