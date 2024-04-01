@@ -24,7 +24,7 @@
 
 .navbar ul li {
   padding: 1px 20px;
-  color: var(--pearl);
+  color: white;
   cursor: pointer;
   writing-mode: vertical-rl;
   text-orientation: upright;
@@ -63,4 +63,8 @@
 
 .navbar li::after {
   display: none; /* Hide the line completely */
+}
+
+.text-color{
+  color: var(--pearl);
 }

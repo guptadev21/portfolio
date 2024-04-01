@@ -10,7 +10,7 @@ const Navbar = ({ activeSection, smoothScrollToSection }) => {
           <Link
             to="/"
             onClick={() => smoothScrollToSection('about-me')}
-            className={activeSection === 'about-me' ? 'active' : ''}
+            className={activeSection === 'about-me' ? 'active text-color' : 'text-color'}
           >
             About Me
           </Link>
@@ -19,7 +19,7 @@ const Navbar = ({ activeSection, smoothScrollToSection }) => {
           <Link
             to="/"
             onClick={() => smoothScrollToSection('experience')}
-            className={activeSection === 'experience' ? 'active' : ''}
+            className={activeSection === 'experience' ? 'active text-color' : 'text-color'}
           >
             Experience
           </Link>
@@ -28,7 +28,7 @@ const Navbar = ({ activeSection, smoothScrollToSection }) => {
           <Link
             to="/"
             onClick={() => smoothScrollToSection('projects')}
-            className={activeSection === 'projects' ? 'active' : ''}
+            className={activeSection === 'projects' ? 'active text-color' : 'text-color'}
           >
             Projects
           </Link>
@@ -37,7 +37,7 @@ const Navbar = ({ activeSection, smoothScrollToSection }) => {
           <Link
             to="/"
             onClick={() => smoothScrollToSection('contact')}
-            className={activeSection === 'contact' ? 'active' : ''}
+            className={activeSection === 'contact' ? 'active text-color' : 'text-color'}
           >
             Contact
           </Link>
